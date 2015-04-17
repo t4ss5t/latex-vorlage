@@ -64,7 +64,6 @@ Labels (Verweise) werden folgendermaßen definiert
 ```
 
 Eine dokumenteninterne Verlinkung wird folgendermaßen erreicht:
-
 ```tex
 \ref{lbl:name}
 ```
@@ -127,7 +126,9 @@ Sections können zur Gliederung des Dokuments verwendet werden:
 
 #### Fußnoten
 
+```tex
 \footnote{...}
+```
 
 ### Abkürzungen
 
@@ -145,15 +146,13 @@ Um sie in der Dokumentation zu verwenden stehen folgende Befehle zur Verfügung:
 
 ### Literaturverweis
 
-Literaturverweise werden in der Datei Bibliography.tex angelegt
-
+Literaturverweise werden in der Datei Bibliography.tex angelegt. Beispiel:
 ```tex
 \bibitem{wiki_boost} Boost (C++-Bibliothek) - Wikipedia, de.wikipedia.org (Stand 10.10.2013)
  \url {http://de.wikipedia.org/wiki/Boost_(C++-Bibliothek)}
 ```
 
 Der Literaturverweis lässt sich dann im Dokument folgendermaßen referenzieren:
-
 ```tex
 \cite{wiki_boost}
 ```
