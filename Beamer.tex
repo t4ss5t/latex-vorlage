@@ -1,0 +1,57 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Rochester}
+  \setbeamercovered{transparent}
+}
+
+%\usepackage[ngerman]{babel}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+\lstset{language=sh}
+
+\include{vars}
+
+\title{\vartitle}
+\subtitle{\varsubtitle}
+\subject{\varsubject}
+\author{\varauthorprename \ \varauthorsurname\\}
+
+\institute
+{
+  \varufas \ - \vardepartment \\
+  \varcourseofstudies \ - \varsubjectarea\\
+  \varcause\\
+}
+
+\date{Datum}
+
+\pgfdeclareimage[height=0.5cm]{university-logo}{img/logo.jpg}
+\logo{\pgfuseimage{university-logo}}
+
+%\AtBeginSubsection[]
+%{
+%  \begin{frame}<beamer>{Übersicht}
+%    \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Übersicht}
+  \tableofcontents%[pausesections]
+\end{frame}
+
+\end{document}

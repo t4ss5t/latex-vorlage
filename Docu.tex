@@ -1,0 +1,79 @@
+\documentclass[12pt,titlepage,a4paper,bibtotoc]{scrartcl}
+
+% Unterpunkte hinzufügen (wenn notwendig)
+\setcounter{tocdepth}{4}   
+\setcounter{secnumdepth}{4}
+
+% Pakete
+\input{packages}
+
+% (statische) Variablen einbinden
+\input{vars}
+
+% Deckblatt
+\input{Cover}
+
+% Meta
+\input{Meta}
+
+% Dokument beginnen
+\begin{document}  
+
+% Serifenlose Schrift einstellen
+%\setkomafont{captionlabel}{\sffamily} 
+%\setkomafont{caption}{\sffamily}
+%\setkomafont{footnote}{\sffamily}
+\renewcommand*{\familydefault}{\sfdefault}
+\sffamily
+
+% Seitennummerierung auf roemische Zahlen setzen
+\pagenumbering{Roman}
+
+% Deckblatt erzeugen
+\maketitle
+\clearpage
+
+% Einleitung
+\input{Intro}
+\clearpage
+
+% Erklaerung
+\input{Declaration}
+\clearpage
+
+% Inhaltsverzeichnis
+\tableofcontents
+\clearpage
+
+% Nomenklatur
+\printnomenclature
+\clearpage
+
+% Listen
+\input{Lists}
+\clearpage
+
+% Abkuerzungsverzeichnis
+\input{Acronym}
+
+\clearpage
+
+% Seitennummerierung auf arabische Zahlen setzen
+\pagenumbering{arabic}
+
+\clearpage
+
+% Inhalt Beginn
+
+
+% Inhalt Ende
+\clearpage
+\raggedright
+
+% Literaturverzeichnis
+\input{Bibliography}
+
+% Anhang
+\input{Appendix}
+
+\end{document}
