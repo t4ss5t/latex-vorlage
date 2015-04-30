@@ -6,6 +6,8 @@ Vorlage für (deutschsprachige) wissenschaftliche Arbeiten (Hausarbeit, Projekta
 
 TeXworks und TexLive
 
+Das deutsche Sprachpaket kann unter http://archive.services.openoffice.org/pub/mirror/OpenOffice.org/contrib/dictionaries/ heruntergeladen und im Ordner C:\Users\USER\TeXworks\dictionaries hinterlegt werden.
+
 ## Dateien
 
 - packages.tex: Verwendete Pakete
